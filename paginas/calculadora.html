@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+<title>CALCULADORA</title>
+<style type="text/css">
+	
+
+html{
+	background-color: black;
+}
+
+.div
+{
+color: white;
+text-align: center;
+border-radius: 200px;
+position:relative;
+bottom: -150px;
+min-height: 200px;
+
+}	
+
+.border
+{
+
+background-color: #000000;
+border-collapse: collapse;
+border: solid black;
+border-radius: 10px;
+width: 300px;
+margin: auto;
+padding: 10px;
+box-shadow: 5px 5px 20px 6px #8d00ed;
+
+</style>
+<script type="text/javascript">
+  
+function funcaoteste()
+
+{
+
+
+var a =  document.getElementById("Teste").value;
+var b =  document.getElementById("Teste2").value;
+var c = document.getElementById("op").value;
+var d = ""
+
+if ( c == 'somar')
+
+{
+  alert( 'O resultado é ' + (parseInt(a) + parseInt(b)) );
+}
+
+if( c == 'subtrair' )
+
+{
+  alert( 'O resultado é ' + (parseInt(a) - parseInt(b)) );
+}
+
+if( c == 'multiplicar')
+
+{
+	alert('O resultado é ' + (parseInt(a) * parseInt(b)));
+}
+
+if( c == 'dividir')
+
+{
+	alert('O resultado é ' + (parseInt(a) / parseInt(b)));
+}
+
+if( c == 'potência')
+
+{
+	alert('O resultado é ' + (parseInt(a) ** parseInt(b)));
+}
+
+
+
+else
+{
+}
+return false;
+
+}
+
+
+</script>
+</head>
+
+<body class="div">
+
+	<div class="border">
+<h1 style="font-family: Poppins;">CALCULADORA</h1>
+<p style="font-family: Roboto">Digite um número</p>
+<form>
+
+<input type="número" name="" id="Teste">
+</form>
+
+<p style="font-family: Roboto">Informe a operação</p>
+<select id="op">
+<option></option>
+<option>somar</option>
+<option>subtrair</option>
+<option>multiplicar</option>
+<option>dividir</option>
+<option>potência</option>
+</select>
+
+<p style="font-family: Roboto">Digite outro número</p>
+<form>
+<input type="número" name="" id="Teste2">
+</form>
+<br>
+<button style="font-family: Roboto; color: white; background-color: black;" onclick="funcaoteste()">Resultado</button>
+
+
+
+
+
+</div></body>
+</html>

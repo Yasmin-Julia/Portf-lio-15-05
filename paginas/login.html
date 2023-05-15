@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>LOGIN</title>
+<style type="text/css">
+
+
+
+button {
+  padding: 2px; color:white; background-color: black;
+}
+button:hover
+{
+padding: 2px; color:white; background-color: purple;
+}
+p{
+  color: white;
+}
+
+h1{
+  color: white;
+}
+
+
+body
+{
+	background-color: black;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	opacity: 90%
+}
+	
+.button
+{
+  background-color: white;
+  border: none;
+  border-radius: 122px;
+  color: black;
+  padding: 13px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+.border
+{
+
+background-color: #000000;
+border-collapse: collapse;
+border: 1px solid black;
+border-radius: 10px;
+height: 250px;
+width: 300px;
+margin: auto;
+padding: 10px;
+box-shadow:12px 20px 20px -9px#8d00ed;
+}
+
+.div
+{
+
+text-align: center;
+border-radius: 200px;
+position:relative;
+bottom: -150px;
+min-height: 200px;
+
+}
+
+</style>
+
+<script type="text/javascript">
+  
+function funcaoteste()
+
+{
+  
+  var a = document.getElementById("Teste").value;
+  var b = document.getElementById("Teste2").value;
+
+if ( a == 'admin' & b == 'abc')
+
+{
+  alert('SUCESSO');
+}
+
+else
+{
+  alert('FALHA');
+}
+
+return false;
+
+}
+
+
+</script>
+</head>
+
+<body class="div">
+<div class="border">
+
+<h1>LOGIN</h1>
+
+<p>Usuário:</p>
+
+<form>
+
+<input type="text" name="nome" id="Teste" placeholder="usuário">
+
+
+</form>
+
+<p> Senha: </p>
+
+
+<form>
+
+<input type="password" name="nome" id="Teste2" placeholder="senha"> 
+
+<br>
+<br>
+<button onclick="funcaoteste()" style="padding: 2px; color:white; background-color: black">
+  ENTRAR
+</button>
+
+</form>
+
+</label>
+
+</div>
+</body>
+</html>
